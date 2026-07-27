@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · Proxy</title>
+  <meta name="description" content="Proxy Privacy Policy." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,560;0,9..40,600;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,650&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --space: #020309;
+  --ink: #f2f3f8;
+  --muted: #9aa0b4;
+  --dim: #6b7186;
+  --line: rgba(255, 255, 255, 0.08);
+  --aurora: #857fc0;
+  --aurora-soft: #9b8fd4;
+  --card: rgba(255, 255, 255, 0.03);
+  --max: 42rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(133, 127, 192, 0.22), transparent 55%),
+    radial-gradient(800px 400px at 80% 20%, rgba(84, 76, 147, 0.18), transparent 50%),
+    var(--space);
+  color: var(--ink);
+  font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--aurora-soft); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { color: #c4bdf0; }
+
+.shell { width: min(var(--max), calc(100% - 2.5rem)); margin: 0 auto; padding: 2.5rem 0 4.5rem; }
+
+.top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+.wordmark {
+  font-size: 1.35rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav { display: flex; gap: 1.1rem; font-size: 0.875rem; color: var(--muted); }
+.nav a { color: var(--muted); text-decoration: none; }
+.nav a[aria-current="page"] { color: var(--ink); }
+.nav a:hover { color: var(--ink); }
+
+header.doc-head { margin-bottom: 2rem; }
+header.doc-head p.kicker {
+  margin: 0 0 0.65rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--aurora);
+}
+header.doc-head h1 {
+  margin: 0 0 0.75rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(1.85rem, 4vw, 2.35rem);
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.meta {
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--dim);
+}
+
+article.prose > * + * { margin-top: 1rem; }
+article.prose h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.75rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+article.prose h3 {
+  margin-top: 1.6rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+article.prose p { margin: 0; color: rgba(242, 243, 248, 0.92); }
+article.prose ul, article.prose ol { margin: 0.35rem 0 0; padding-left: 1.25rem; }
+article.prose li + li { margin-top: 0.35rem; }
+article.prose li::marker { color: var(--aurora); }
+article.prose hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+article.prose strong { font-weight: 650; color: #fff; }
+article.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.92rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+article.prose th, article.prose td {
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+article.prose th { color: var(--muted); font-weight: 600; background: rgba(255,255,255,0.02); }
+article.prose tr:last-child td { border-bottom: 0; }
+
+footer.site-foot {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.8125rem;
+  color: var(--dim);
+}
+footer.site-foot a { color: var(--muted); }
+
+@media (max-width: 560px) {
+  .shell { width: min(var(--max), calc(100% - 1.75rem)); padding-top: 1.75rem; }
+  .top { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <div class="top">
+      <a class="wordmark" href="../">Proxy</a>
+      <nav class="nav" aria-label="Legal">
+        <a href="../terms/">Terms</a>
+        <a href="../privacy/" aria-current="page">Privacy</a>
+      </nav>
+    </div>
+    <header class="doc-head">
+      <p class="kicker">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>Effective date:</strong> July 27, 2026</p>
+<p class="meta"><strong>Last updated:</strong> July 27, 2026</p>
+<p class="meta">This Privacy Policy explains how <strong>[Proxy operating entity]</strong> (&quot;<strong>Proxy</strong>,&quot; &quot;<strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;<strong>our</strong>&quot;) collects, uses, shares, and protects personal information when you use the Proxy mobile app and related services (the &quot;<strong>Service</strong>&quot;).</p>
+<p class="meta">Proxy helps you get things done: voice and text requests, tasks, projects, approvals, notifications, and (when you choose) connected accounts and delegated browser sessions.</p>
+<p class="meta">We wrote this in plain language. If something is still unclear, email us at the address in Section 11.</p>
+    </header>
+    <article class="prose">
+<h2>1. Scope</h2>
+<p>This Policy covers personal information we process as operator of Proxy for consumers and individual users in the United States (and elsewhere where the Service is offered).</p>
+<p>It does not cover:</p>
+<ul><li>third-party websites or apps you open outside Proxy, except for data those parties send us when you connect them;</li><li>information processed solely on your device that never leaves your device (for example, some on-device keys), except as described below.</li></ul>
+<hr />
+<h2>2. Information we collect</h2>
+<p>We collect information in these categories. Exact fields depend on which features you use.</p>
+<h3>2.1 Account and identity</h3>
+<p>When you continue with Apple or Google, we receive identifiers and profile details those providers share with us (such as a stable account ID, name, and email, depending on what you choose to share).</p>
+<p>We may also store organization or workspace labels you set up in the app.</p>
+<h3>2.2 Requests, tasks, and content you create</h3>
+<ul><li>Voice or text requests you send to Proxy</li><li>Transcripts or processed text derived from voice input when you use speak-to-Proxy</li><li>Tasks, projects, messages, approvals, notes, and similar content</li><li>Feedback you send us</li></ul>
+<p><strong>Audio:</strong> When you tap to speak, the microphone is used to capture your request. Audio may be transmitted to operate speech features and may be processed into text. We do not use your microphone when you are not actively speaking to Proxy.</p>
+<h3>2.3 Approvals, devices, and security</h3>
+<ul><li>Approval decisions and related metadata</li><li>Device information needed for secure features (for example device ID, platform, push capability, and whether a device has a signing key for secure browser grants)</li><li>Biometric prompts (such as Face ID) run on your device. We do not receive your biometric templates. We may receive the fact that a grant was approved or denied.</li></ul>
+<h3>2.4 Notifications</h3>
+<ul><li>Push notification tokens</li><li>Notification preference settings (which categories you want alerts for)</li></ul>
+<h3>2.5 Connected accounts and delegated sessions</h3>
+<p>If you grant Proxy access to a site or account:</p>
+<ul><li>site or host identifiers</li><li>session or grant metadata (status, timing, scope as implemented)</li><li>actions taken through that access as needed to complete your requests and show you history</li></ul>
+<p>We ask you to authorize sensitive access. You can revoke sessions in Settings.</p>
+<h3>2.6 Usage, diagnostics, and device data</h3>
+<ul><li>App version, OS version, device type</li><li>Approximate timestamps of key events (sign-in, feature use, errors)</li><li>Crash and performance diagnostics</li><li>IP address and similar network metadata when your device talks to our servers</li></ul>
+<h3>2.7 Payments and subscriptions</h3>
+<p>If you subscribe through Apple or Google, purchase validation and subscription status may be processed by those platforms and shared with us as needed to unlock features. We typically do not receive full payment card numbers from those stores.</p>
+<h3>2.8 Model provider keys (optional)</h3>
+<p>If you choose &quot;bring your own&quot; model API key, that key may be stored on your device for now. Treat it like a password. Provider processing of prompts you send with that key is governed by that provider’s policies.</p>
+<hr />
+<h2>3. How we use information</h2>
+<p>We use personal information to:</p>
+<ul><li>provide, operate, and personalize the Service;</li><li>authenticate you and secure your account and devices;</li><li>carry out requests you make, including through tools and connected access you authorize;</li><li>send push notifications you enable;</li><li>show tasks, projects, approvals, and history;</li><li>prevent abuse, debug issues, and keep the Service reliable;</li><li>improve product quality (including evaluating whether features work as intended);</li><li>communicate about the Service (transactional messages, security notices, and, where allowed, product updates);</li><li>comply with law and enforce our Terms.</li></ul>
+<p>We do <strong>not</strong> sell your personal information. We do <strong>not</strong> claim SOC 2, HIPAA, or similar certifications in this Policy unless we have completed them and update this document accordingly.</p>
+<hr />
+<h2>4. AI processing</h2>
+<p>To understand requests and take actions, we process Your Content with automated systems and model providers that act as our service providers (subprocessors). That may include sending prompts, tool inputs/outputs, and related context needed to fulfill a request.</p>
+<p>You should avoid pasting secrets you do not want processed (passwords, full government ID numbers, and similar) unless a feature specifically requires them and you understand the risk.</p>
+<hr />
+<h2>5. How we share information</h2>
+<p>We share personal information only as described here:</p>
+<p>We do not share your content with other Proxy users except as needed for features you use (for example teammates in an organization you join).</p>
+<p><strong>Vendor names:</strong> We keep an internal subprocessor list for operations. Public marketing pages will list categories above; exact vendor names may be provided on request or in a future subprocessor page once finalized. <strong>[LEGAL: publish named subprocessor list when counsel approves.]</strong></p>
+<hr />
+<h2>6. Permissions on your device</h2>
+<p>Proxy may request:</p>
+<p>You can deny or later revoke OS permissions in system Settings. Some features will not work without them.</p>
+<hr />
+<h2>7. Retention</h2>
+<p>We keep personal information only as long as needed for the purposes above, including:</p>
+<ul><li>while your account is active;</li><li>for a reasonable period afterward for security, dispute resolution, backups, and legal compliance;</li><li>for shorter periods for transient logs and tokens where practical.</li></ul>
+<p><strong>[LEGAL: set concrete retention periods (account data, voice/audio, transcripts, push tokens, connected-session metadata, backups).]</strong></p>
+<p>When you delete your account, we delete or de-identify personal information we control, except where we must retain it (for example legal holds, fraud prevention, or aggregated analytics that no longer identifies you). Residual copies may remain in encrypted backups for a limited time until rotated.</p>
+<hr />
+<h2>8. Security</h2>
+<p>We use administrative, technical, and organizational measures designed to protect personal information (access controls, encryption in transit, and, for some sensitive device features, on-device keys that are designed not to leave your device).</p>
+<p>No method of transmission or storage is perfectly secure. Please use device passcodes/biometrics and report suspected account issues promptly.</p>
+<hr />
+<h2>9. Children’s privacy</h2>
+<p>Proxy is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided personal information, contact us and we will take appropriate steps to delete it.</p>
+<p>Where required, users under 18 need parental or guardian consent.</p>
+<hr />
+<h2>10. Your rights and choices</h2>
+<p>Depending on where you live (including California and other U.S. states with privacy laws), you may have rights to:</p>
+<ul><li><strong>Access</strong> the personal information we hold about you</li><li><strong>Correct</strong> inaccurate information</li><li><strong>Delete</strong> personal information</li><li><strong>Port</strong> a copy of information you provided</li><li><strong>Opt out</strong> of certain processing (such as targeted advertising, if we ever engage in it; we do not sell personal information)</li><li><strong>Limit</strong> use of sensitive personal information where that right applies</li><li><strong>Appeal</strong> a denial of a consumer request where state law provides an appeal</li></ul>
+<p>You can also:</p>
+<ul><li>adjust notification preferences in Settings;</li><li>revoke connected sessions in Settings;</li><li>report a device lost (from another device) to stop secure-session approvals from that device;</li><li>disconnect Apple/Google sign-in and request account deletion by contacting us.</li></ul>
+<p>To exercise rights, email <strong><a href="mailto:privacy@proxy.ai">privacy@proxy.ai</a></strong>. We may need to verify your request. You may use an authorized agent where the law allows. We will not discriminate against you for exercising privacy rights.</p>
+<p><strong>Do Not Track:</strong> The Service does not currently respond to DNT browser signals in a standardized way because Proxy is primarily a mobile app.</p>
+<hr />
+<h2>11. Contact</h2>
+<p><strong>Privacy requests:</strong> <a href="mailto:privacy@proxy.ai">privacy@proxy.ai</a> <strong>General / legal:</strong> <a href="mailto:legal@proxy.ai">legal@proxy.ai</a> <strong>Operator:</strong> [Proxy operating entity] <strong>Mailing address:</strong> [physical address — TBD]</p>
+<hr />
+<h2>12. International users</h2>
+<p>We are U.S.-focused. If you use Proxy from outside the United States, you understand that information may be processed in the United States and other countries where we or our providers operate. Those places may have different data-protection rules than your home country.</p>
+<p><strong>[LEGAL: add GDPR/UK transfer language only if offering the Service to those regions.]</strong></p>
+<hr />
+<h2>13. Changes</h2>
+<p>We may update this Policy. We will change the &quot;Last updated&quot; date and, for material changes, provide additional notice as required by law. Continued use after the effective date means you acknowledge the updated Policy, except where law requires a different process.</p>
+<hr />
+<h2>14. Related</h2>
+<ul><li><a href="../terms/">Terms of Service</a></li></ul>
+    </article>
+    <footer class="site-foot">
+      <p>Proxy · drafts for counsel review · see open questions in the product repo.</p>
+      <p><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a></p>
+    </footer>
+  </div>
+</body>
+</html>

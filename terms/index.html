@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service · Proxy</title>
+  <meta name="description" content="Proxy Terms of Service." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,560;0,9..40,600;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,650&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --space: #020309;
+  --ink: #f2f3f8;
+  --muted: #9aa0b4;
+  --dim: #6b7186;
+  --line: rgba(255, 255, 255, 0.08);
+  --aurora: #857fc0;
+  --aurora-soft: #9b8fd4;
+  --card: rgba(255, 255, 255, 0.03);
+  --max: 42rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(133, 127, 192, 0.22), transparent 55%),
+    radial-gradient(800px 400px at 80% 20%, rgba(84, 76, 147, 0.18), transparent 50%),
+    var(--space);
+  color: var(--ink);
+  font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--aurora-soft); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { color: #c4bdf0; }
+
+.shell { width: min(var(--max), calc(100% - 2.5rem)); margin: 0 auto; padding: 2.5rem 0 4.5rem; }
+
+.top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+.wordmark {
+  font-size: 1.35rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav { display: flex; gap: 1.1rem; font-size: 0.875rem; color: var(--muted); }
+.nav a { color: var(--muted); text-decoration: none; }
+.nav a[aria-current="page"] { color: var(--ink); }
+.nav a:hover { color: var(--ink); }
+
+header.doc-head { margin-bottom: 2rem; }
+header.doc-head p.kicker {
+  margin: 0 0 0.65rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--aurora);
+}
+header.doc-head h1 {
+  margin: 0 0 0.75rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(1.85rem, 4vw, 2.35rem);
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.meta {
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--dim);
+}
+
+article.prose > * + * { margin-top: 1rem; }
+article.prose h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.75rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+article.prose h3 {
+  margin-top: 1.6rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+article.prose p { margin: 0; color: rgba(242, 243, 248, 0.92); }
+article.prose ul, article.prose ol { margin: 0.35rem 0 0; padding-left: 1.25rem; }
+article.prose li + li { margin-top: 0.35rem; }
+article.prose li::marker { color: var(--aurora); }
+article.prose hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+article.prose strong { font-weight: 650; color: #fff; }
+article.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.92rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+article.prose th, article.prose td {
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+article.prose th { color: var(--muted); font-weight: 600; background: rgba(255,255,255,0.02); }
+article.prose tr:last-child td { border-bottom: 0; }
+
+footer.site-foot {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.8125rem;
+  color: var(--dim);
+}
+footer.site-foot a { color: var(--muted); }
+
+@media (max-width: 560px) {
+  .shell { width: min(var(--max), calc(100% - 1.75rem)); padding-top: 1.75rem; }
+  .top { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <div class="top">
+      <a class="wordmark" href="../">Proxy</a>
+      <nav class="nav" aria-label="Legal">
+        <a href="../terms/" aria-current="page">Terms</a>
+        <a href="../privacy/">Privacy</a>
+      </nav>
+    </div>
+    <header class="doc-head">
+      <p class="kicker">Legal</p>
+      <h1>Terms of Service</h1>
+      <p class="meta"><strong>Effective date:</strong> July 27, 2026</p>
+<p class="meta"><strong>Last updated:</strong> July 27, 2026</p>
+<p class="meta">These Terms of Service (&quot;<strong>Terms</strong>&quot;) govern your access to and use of the Proxy mobile application and related services (collectively, the &quot;<strong>Service</strong>&quot;) operated by <strong>[Proxy operating entity]</strong> (&quot;<strong>Proxy</strong>,&quot; &quot;<strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;<strong>our</strong>&quot;).</p>
+<p class="meta">By creating an account, tapping Continue with Apple or Continue with Google, or otherwise using the Service, you agree to these Terms. If you do not agree, do not use the Service.</p>
+<p class="meta">If you use Proxy on behalf of an organization, you represent that you have authority to bind that organization, and &quot;<strong>you</strong>&quot; includes that organization.</p>
+    </header>
+    <article class="prose">
+<h2>1. What Proxy is</h2>
+<p>Proxy is a personal and work assistant. You can ask Proxy to help get things done: tasks, projects, reminders, research, drafting, coordinating approvals, and similar requests.</p>
+<p>Depending on features you enable, Proxy may:</p>
+<ul><li>understand requests you speak or type;</li><li>create and update tasks and projects;</li><li>ask you for confirmation before sensitive actions;</li><li>send you push notifications;</li><li>act through tools and connected accounts you authorize, including delegated browser sessions on sites you grant access to.</li></ul>
+<p>Proxy is designed to work on your behalf. You stay in control of approvals, connected access, and what you ask it to do.</p>
+<hr />
+<h2>2. Eligibility and accounts</h2>
+<p>You must be at least 13 years old to use the Service (see also our Privacy Policy on children’s privacy). If you are under 18, you may use Proxy only with a parent or guardian’s consent where required by law.</p>
+<p>You can sign in with Apple or Google. You are responsible for:</p>
+<ul><li>keeping your sign-in method secure;</li><li>activity that occurs under your account; and</li><li>telling us promptly if you believe your account was used without authorization.</li></ul>
+<p>We may refuse, suspend, or end accounts that violate these Terms or that we reasonably believe present a security, legal, or abuse risk.</p>
+<hr />
+<h2>3. Your responsibilities</h2>
+<p>You agree to:</p>
+<ul><li>use Proxy only for lawful purposes;</li><li>provide accurate information when the Service asks for it;</li><li>review and respond to approvals, questions, and secure-access requests in a timely way when you choose to enable those features;</li><li>keep credentials, API keys, and connected-account access under your control; and</li><li>comply with the terms of any third-party sites or services you ask Proxy to interact with.</li></ul>
+<p>You are responsible for the instructions you give Proxy and for decisions you make based on its output.</p>
+<hr />
+<h2>4. Acceptable use</h2>
+<p>You will not, and will not allow others to:</p>
+<ol><li>use the Service to break the law, infringe others’ rights, or commit fraud;</li><li>attempt to gain unauthorized access to accounts, systems, or data (yours or anyone else’s);</li><li>probe, scan, or attack the Service except with our prior written permission;</li><li>interfere with or disrupt the Service;</li><li>reverse engineer the Service except where applicable law prohibits that restriction;</li><li>use Proxy to spam, harass, deceive, or harm people;</li><li>upload malware or attempt to compromise devices or networks;</li><li>misuse connected accounts or delegated sessions (for example, scraping or automating in ways that violate a site’s rules, or accessing accounts you do not have rights to use);</li><li>use the Service in a way that creates unreasonable load or bypasses usage limits; or</li><li>remove or obscure proprietary notices in the Service.</li></ol>
+<p>We may investigate suspected misuse and suspend or terminate access when we reasonably believe a violation has occurred.</p>
+<hr />
+<h2>5. AI, agents, and actions on your behalf</h2>
+<p>Proxy uses artificial intelligence and automated systems to interpret requests and take steps toward completing them.</p>
+<p><strong>Important limitations</strong></p>
+<ul><li>Proxy can be wrong. It may misunderstand you, invent details, miss context, or take incomplete steps.</li><li>Outputs are not professional advice (legal, medical, financial, tax, or otherwise) unless we expressly say otherwise in a separate written agreement.</li><li>You should review important results, drafts, and proposed actions before relying on them, especially where money, identity, legal rights, health, or safety are involved.</li><li>When Proxy acts through tools or connected sites, it does so based on your instructions and the permissions you grant. Those actions can have real-world effects (sending messages, placing orders, changing account settings, submitting forms, and similar).</li></ul>
+<p><strong>Approvals and sensitive actions</strong></p>
+<p>Some actions may require your confirmation in the app (for example Face ID / biometric approval for secure browser grants). Disabling notifications does not remove approval requirements; it only changes how quickly you learn that something is waiting.</p>
+<p><strong>Connected accounts and delegated sessions</strong></p>
+<p>If you grant Proxy access to a site or account, you authorize Proxy to use that access to carry out related requests until you revoke it. You can revoke sessions in Settings. Revoking does not undo actions already taken.</p>
+<hr />
+<h2>6. Subscriptions, trials, and fees</h2>
+<p>Some features may be free, trial-limited, or paid. If you buy a subscription or add-on:</p>
+<ul><li>fees, renewal, and cancellation details will be shown at purchase (including through the App Store or Google Play where applicable);</li><li>taxes may apply;</li><li>platform refund rules (Apple / Google) may govern purchases made through those stores.</li></ul>
+<p>We may change plans or pricing with notice as required by law. Free or trial access may be limited or ended.</p>
+<hr />
+<h2>7. Intellectual property</h2>
+<p>Proxy, including its software, branding, and design, is owned by us or our licensors. These Terms do not transfer ownership to you. We grant you a limited, personal, non-exclusive, non-transferable license to use the Service as allowed by these Terms.</p>
+<p>You retain rights in content you submit (&quot;<strong>Your Content</strong>&quot;). You grant us a worldwide license to host, process, transmit, and display Your Content as needed to operate and improve the Service, and as described in our Privacy Policy.</p>
+<p>Feedback you send us may be used freely without obligation to you.</p>
+<hr />
+<h2>8. Third-party services</h2>
+<p>Proxy may rely on third parties for sign-in (Apple, Google), notifications, cloud infrastructure, model providers, and other subprocessors. Third-party services have their own terms and privacy practices. We are not responsible for third-party services we do not control, except as required by law.</p>
+<p>If you bring your own model API key, that provider’s terms also apply to your use of that key.</p>
+<hr />
+<h2>9. Privacy</h2>
+<p>Our <a href="../privacy/">Privacy Policy</a> explains what we collect and how we use it. By using the Service, you acknowledge that policy.</p>
+<hr />
+<h2>10. Disclaimers</h2>
+<p>THE SERVICE IS PROVIDED &quot;<strong>AS IS</strong>&quot; AND &quot;<strong>AS AVAILABLE</strong>.&quot; TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+<p>We do not warrant that the Service will be uninterrupted, error-free, secure, or that Proxy’s actions or outputs will be accurate, complete, or suitable for your purpose.</p>
+<hr />
+<h2>11. Limitation of liability</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, PROXY AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, LOST DATA, OR BUSINESS INTERRUPTION, ARISING FROM YOUR USE OF THE SERVICE, EVEN IF ADVISED OF THE POSSIBILITY.</p>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THE SERVICE OR THESE TERMS IS LIMITED TO THE GREATER OF (A) THE AMOUNTS YOU PAID US FOR THE SERVICE IN THE TWELVE (12) MONTHS BEFORE THE CLAIM OR (B) ONE HUNDRED U.S. DOLLARS (US $100).</p>
+<p>Some jurisdictions do not allow certain limitations. In those places, our liability is limited to the fullest extent allowed.</p>
+<hr />
+<h2>12. Indemnity</h2>
+<p>You will defend and indemnify us against claims, damages, and expenses (including reasonable attorneys’ fees) arising from Your Content, your instructions to Proxy, your misuse of connected accounts, or your violation of these Terms or applicable law, except to the extent caused by our willful misconduct.</p>
+<hr />
+<h2>13. Suspension and termination</h2>
+<p>You may stop using Proxy at any time and may request account deletion as described in the Privacy Policy.</p>
+<p>We may suspend or terminate access if you violate these Terms, if required by law, or if we discontinue the Service. We will try to give reasonable notice when practical.</p>
+<p>Provisions that by their nature should survive (including intellectual property, disclaimers, liability limits, and indemnity) will survive termination.</p>
+<hr />
+<h2>14. Changes</h2>
+<p>We may update these Terms. We will post the updated version with a new &quot;Last updated&quot; date and, when changes are material, provide additional notice as required by law (for example in-app or by email). Continued use after the effective date of changes means you accept the updated Terms, except where applicable law requires a different process.</p>
+<hr />
+<h2>15. Governing law and disputes</h2>
+<p>These Terms are governed by the laws of the State of <strong>[governing state / U.S. jurisdiction — TBD]</strong>, excluding conflict-of-law rules.</p>
+<p><strong>[LEGAL: confirm venue, arbitration vs. courts, and consumer carve-outs before ship.]</strong></p>
+<p>If a dispute arises, contact us first so we can try to resolve it informally.</p>
+<hr />
+<h2>16. Miscellaneous</h2>
+<p>These Terms, plus any plan or purchase terms presented at checkout and our Privacy Policy, are the entire agreement between you and us for the Service. If a provision is unenforceable, the rest remains in effect. Our failure to enforce a provision is not a waiver. You may not assign these Terms without our consent; we may assign them in connection with a merger, acquisition, or sale of assets.</p>
+<hr />
+<h2>17. Contact</h2>
+<p>Questions about these Terms:</p>
+<p><strong>Email:</strong> <a href="mailto:legal@proxy.ai">legal@proxy.ai</a> <strong>Operator:</strong> [Proxy operating entity] <strong>Mailing address:</strong> [physical address — TBD]</p>
+<p>For privacy requests, see the Privacy Policy contact section.</p>
+    </article>
+    <footer class="site-foot">
+      <p>Proxy · drafts for counsel review · see open questions in the product repo.</p>
+      <p><a href="../terms/">Terms</a> · <a href="../privacy/">Privacy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
