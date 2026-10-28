@@ -15,7 +15,10 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    # Phantom runner by default (CI runners plan, docs PR #354). Kill switch, no commit needed:
+    #   gh api -X POST repos/PhantomOrganization/proxy-legal/actions/variables -f name=PHANTOM_CI -f value=false
+    # Queued jobs that never start (runner down) are auto-cancelled by GitHub after 24 h; a lost runner fails the job.
+    runs-on: ${{ vars.PHANTOM_CI == 'false' && 'ubuntu-latest' || 'phantom-ci-small' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
